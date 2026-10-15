@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ma boîte à outils · Popeye Prime</title>
+  <meta name="description" content="79 ressources de vibe coding réunies depuis deux sources, comparées et filtrables par catégorie.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-outils">
+
+  <header class="haut-outils">
+    <a class="retour" href="index.html"><span aria-hidden="true">←</span> Accueil</a>
+  </header>
+
+  <main class="boite">
+
+    <!-- L'introduction -->
+    <section class="intro-outils">
+      <svg class="mini-ballon" viewBox="-20 -24 40 80" aria-hidden="true">
+        <g class="ballon-flotte">
+          <path d="M0 21 Q3 28 0 34" fill="none" stroke="#8A7F95" stroke-width="1.2" />
+          <ellipse cx="0" cy="0" rx="15" ry="18" fill="#8F7CF0" />
+          <ellipse cx="-5" cy="-7" rx="4" ry="6.5" fill="#FFFFFF" opacity="0.45" />
+          <path d="M-2.5 17 L2.5 17 L0 21 Z" fill="#7A66DE" />
+          <rect x="-10" y="37" width="20" height="16" rx="2" fill="#FFF6E6" />
+          <rect x="3" y="37" width="7" height="16" rx="1.5" fill="#EADCC4" />
+          <rect x="-11.5" y="33.5" width="23" height="5" rx="1.5" fill="#FFFDF5" />
+          <rect x="-2" y="33.5" width="4" height="19.5" fill="#F0503C" />
+          <ellipse cx="-4.5" cy="32.5" rx="4.5" ry="2.6" fill="#F0503C" transform="rotate(-20 -4.5 32.5)" />
+          <ellipse cx="4.5" cy="32.5" rx="4.5" ry="2.6" fill="#F0503C" transform="rotate(20 4.5 32.5)" />
+        </g>
+      </svg>
+      <h1>Ma boîte à outils</h1>
+      <p class="chapo">79 ressources de vibe coding, tirées de deux sources qui ne se ressemblent pas : un post X de 25 ressources et une liste vérifiée de 54 outils. Filtre par catégorie pour trouver le bon outil.</p>
+      <ul class="chiffres">
+        <li><b>25</b> du post X</li>
+        <li><b>54</b> de la liste vérifiée</li>
+        <li><b>3</b> vérifiés à la source</li>
+      </ul>
+    </section>
+
+    <!-- Le catalogue, filtrable sans JavaScript -->
+    <section class="catalogue" id="catalogue" aria-labelledby="titre-catalogue">
+      <h2 id="titre-catalogue">Le catalogue</h2>
+
+      <fieldset class="filtres">
+        <legend>Source</legend>
+        <input type="radio" name="source" id="src-tout" checked><label for="src-tout">Les deux</label>
+        <input type="radio" name="source" id="src-a"><label for="src-a">Post X</label>
+        <input type="radio" name="source" id="src-b"><label for="src-b">Liste vérifiée</label>
+      </fieldset>
+
+      <fieldset class="filtres">
+        <legend>Catégorie</legend>
+        <input type="radio" name="categorie" id="cat-tout" checked><label for="cat-tout">Tout <span>79</span></label>
+        <input type="radio" name="categorie" id="cat-inspiration"><label for="cat-inspiration">Inspiration <span>4</span></label>
+        <input type="radio" name="categorie" id="cat-design-system"><label for="cat-design-system">Design systems <span>3</span></label>
+        <input type="radio" name="categorie" id="cat-composants"><label for="cat-composants">Composants d'interface <span>8</span></label>
+        <input type="radio" name="categorie" id="cat-animation"><label for="cat-animation">Animation et effets <span>8</span></label>
+        <input type="radio" name="categorie" id="cat-prompts"><label for="cat-prompts">Prompts <span>2</span></label>
+        <input type="radio" name="categorie" id="cat-code"><label for="cat-code">Code et édition <span>10</span></label>
+        <input type="radio" name="categorie" id="cat-prototypage"><label for="cat-prototypage">Prototypage d'apps <span>6</span></label>
+        <input type="radio" name="categorie" id="cat-contexte"><label for="cat-contexte">Contexte et intégrations <span>8</span></label>
+        <input type="radio" name="categorie" id="cat-tests"><label for="cat-tests">Tests et sécurité <span>7</span></label>
+        <input type="radio" name="categorie" id="cat-deploiement"><label for="cat-deploiement">Déploiement <span>4</span></label>
+        <input type="radio" name="categorie" id="cat-espaces"><label for="cat-espaces">Espaces de travail <span>8</span></label>
+        <input type="radio" name="categorie" id="cat-apprendre"><label for="cat-apprendre">Apprendre <span>11</span></label>
+      </fieldset>
+
+      <ul class="outils">
+      <li class="outil" data-cat="inspiration" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://minimal.gallery" target="_blank" rel="noopener">Minimal Gallery <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Une sélection de sites haut de gamme pour nourrir ton agent.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;2 du post, non vérifié</p>
+      </li>
+      <li class="outil" data-cat="inspiration" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://godly.website" target="_blank" rel="noopener">Godly <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Des sites choisis un par un pour leur savoir-faire.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;3 du post, non vérifié</p>
+        <p class="alerte">Le lien redirige vers un autre site, recent.design</p>
+      </li>
+      <li class="outil" data-cat="inspiration" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://mobbin.com" target="_blank" rel="noopener">Mobbin <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Les vrais parcours d&#x27;écrans de vraies applications.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;6 du post, non vérifié</p>
+      </li>
+      <li class="outil" data-cat="inspiration" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://awwwards.com" target="_blank" rel="noopener">Awwwards <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Les sites qui ont vraiment été primés.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;18 du post, non vérifié</p>
+      </li>
+      <li class="outil" data-cat="design-system" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://styles.refero.design" target="_blank" rel="noopener">Refero Styles <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Plus de 2&#8239;000 styles de vrais produits, typographie comprise.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;4 du post, non vérifié</p>
+      </li>
+      <li class="outil" data-cat="design-system" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://component.gallery" target="_blank" rel="noopener">Component Gallery <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Plus de 2&#8239;600 exemples de la façon dont les grands design systems traitent un même élément.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;5 du post, non vérifié</p>
+      </li>
+      <li class="outil" data-cat="design-system" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://designmd.ai" target="_blank" rel="noopener">DESIGNmd <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Des design systems écrits en Markdown, lisibles par ton agent.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;7 du post, non vérifié</p>
+      </li>
+      <li class="outil" data-cat="composants" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://21st.dev" target="_blank" rel="noopener">21st.dev <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Un registre de composants qui se branche aux agents par MCP.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;9 du post, non vérifié</p>
+      </li>
+      <li class="outil" data-cat="composants" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://ui.shadcn.com" target="_blank" rel="noopener">shadcn/ui <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Toujours la référence pour une interface propre et réutilisable.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;11 du post, non vérifié</p>
+      </li>
+      <li class="outil" data-cat="composants" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://ui.aceternity.com" target="_blank" rel="noopener">Aceternity UI <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Plus de 200 composants animés en React et Tailwind.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;12 du post, non vérifié</p>
+      </li>
+      <li class="outil" data-cat="composants" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://magicui.design" target="_blank" rel="noopener">Magic UI <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Des composants soignés pour les applications web modernes.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;13 du post, non vérifié</p>
+      </li>
+      <li class="outil" data-cat="composants" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://uiverse.io" target="_blank" rel="noopener">Uiverse <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Des éléments d&#x27;interface et des composants interactifs créés par la communauté.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;15 du post, non vérifié</p>
+      </li>
+      <li class="outil" data-cat="composants" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://shadcnblocks.com" target="_blank" rel="noopener">Shadcnblocks <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Des blocs complets, pas seulement des boutons.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;16 du post, non vérifié</p>
+      </li>
+      <li class="outil" data-cat="composants" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://mapcn.dev" target="_blank" rel="noopener">mapcn <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Des composants de carte : marqueurs, itinéraires, fenêtres d&#x27;information.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;17 du post, non vérifié</p>
+      </li>
+      <li class="outil" data-cat="composants" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://3dicons.co" target="_blank" rel="noopener">3Dicons <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Une bibliothèque gratuite d&#x27;icônes en 3D.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;24 du post, non vérifié</p>
+      </li>
+      <li class="outil" data-cat="animation" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://kinetics.colorion.co" target="_blank" rel="noopener">Kinetics <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Plus de 150 effets de mouvement, avec le code React et les prompts.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;10 du post, non vérifié</p>
+      </li>
+      <li class="outil" data-cat="animation" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://motion-primitives.com" target="_blank" rel="noopener">Motion Primitives <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Des composants d&#x27;animation et d&#x27;interaction prêts à l&#x27;emploi.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;14 du post, non vérifié</p>
+      </li>
+      <li class="outil" data-cat="animation" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://glass.samasante.com" target="_blank" rel="noopener">Liquid Glass <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Des composants et effets de réfraction façon verre.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;19 du post, non vérifié</p>
+      </li>
+      <li class="outil" data-cat="animation" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://text-effects.colorion.co" target="_blank" rel="noopener">CSS Text Effects <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Des animations et effets de texte créatifs en CSS.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;20 du post, non vérifié</p>
+      </li>
+      <li class="outil" data-cat="animation" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://circleloaders.dominikakissi.com" target="_blank" rel="noopener">Circle Loaders <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Des animations de chargement créatives.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;21 du post, non vérifié</p>
+      </li>
+      <li class="outil" data-cat="animation" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://gradientbuttons.colorion.co" target="_blank" rel="noopener">Gradient Buttons <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Des styles et effets de boutons en dégradé.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;22 du post, non vérifié</p>
+      </li>
+      <li class="outil" data-cat="animation" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://shadertoy.com" target="_blank" rel="noopener">Shadertoy <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Des shaders à étudier et à remixer.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;23 du post, non vérifié</p>
+        <p class="alerte">Lien non testé automatiquement : le site affiche une vérification anti-robot</p>
+      </li>
+      <li class="outil" data-cat="animation" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://animejs.com" target="_blank" rel="noopener">Anime.js <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Une bibliothèque JavaScript d&#x27;animation légère.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;25 du post, non vérifié</p>
+      </li>
+      <li class="outil" data-cat="prompts" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://scrolltide.co" target="_blank" rel="noopener">Scrolltide <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Plus de 600 prompts primés et le code source complet de sites en 3D et à défilement : scènes 3D, dégradés interactifs, composants.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;1 du post, non vérifié</p>
+        <p class="alerte">La société de l&#x27;auteur du post</p>
+      </li>
+      <li class="outil" data-cat="prompts" data-source="a">
+        <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
+        <h3><a href="https://vibeprompts.dev" target="_blank" rel="noopener">VibePrompt <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Des prompts prêts à l&#x27;emploi pour tableaux de bord et pages d&#x27;accueil.</p>
+        <p class="meta">Prix non indiqué · n°&nbsp;8 du post, non vérifié</p>
+      </li>
+      <li class="outil" data-cat="code" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">CLI</span></div>
+        <h3><a href="https://github.com/Aider-AI/aider" target="_blank" rel="noopener">Aider <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Pair programming en terminal avec des modèles cloud ou locaux et une intégration Git</p>
+        <p class="acces"><b>Accès</b> Client open source. Coûts d&#x27;API ou de modèle local</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="code" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">CLI</span></div>
+        <h3><a href="https://code.claude.com/docs/en/overview" target="_blank" rel="noopener">Claude Code <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Assistant de code agentique avec workflows en terminal et par projet</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="code" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Ressource</span></div>
+        <h3><a href="https://github.com/cline/cline" target="_blank" rel="noopener">Cline <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Agent de code pour IDE, terminal et desktop, avec outils fichiers, commandes et navigateur</p>
+        <p class="acces"><b>Accès</b> Client plus fournisseur de modèle. Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="code" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">IDE</span></div>
+        <h3><a href="https://www.cursor.com/" target="_blank" rel="noopener">Cursor <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Éditeur et agent de code pour l&#x27;implémentation, le débogage et la revue de code</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="code" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">CLI</span></div>
+        <h3><a href="https://github.com/google-gemini/gemini-cli" target="_blank" rel="noopener">Gemini CLI <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Agent de code open source en terminal avec accès par clé API, Vertex ou offre entreprise éligible. L&#x27;accès par abonnement grand public est retiré</p>
+        <p class="acces"><b>Accès</b> API/Vertex ou entreprise éligible. Pas de voie grand public</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="code" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Ressource</span></div>
+        <h3><a href="https://github.com/features/copilot" target="_blank" rel="noopener">GitHub Copilot <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Assistance au code et workflows d&#x27;agents dans GitHub et les IDE compatibles</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="code" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">CLI</span></div>
+        <h3><a href="https://github.com/aaif-goose/goose" target="_blank" rel="noopener">Goose <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Agent local extensible avec workflows de code, interfaces desktop et CLI, et outils MCP</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="code" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">IDE</span></div>
+        <h3><a href="https://kiro.dev" target="_blank" rel="noopener">Kiro <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Agent de code AWS avec workflows IDE et CLI, spécifications et tests</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="code" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">CLI</span></div>
+        <h3><a href="https://openai.com/codex/" target="_blank" rel="noopener">OpenAI Codex CLI <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Agent de code OpenAI qui s&#x27;exécute localement dans le terminal</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="code" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">CLI</span></div>
+        <h3><a href="https://github.com/earendil-works/pi" target="_blank" rel="noopener">Pi <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Agent de code en terminal, extensible et intégrable comme harnais</p>
+        <p class="acces"><b>Accès</b> Client MIT. Conditions du modèle et du fournisseur séparées</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="prototypage" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Web</span></div>
+        <h3><a href="https://bolt.new/" target="_blank" rel="noopener">Bolt.new <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Création d&#x27;applications en langage naturel, par StackBlitz</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="prototypage" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Desktop</span></div>
+        <h3><a href="https://github.com/dyad-sh/dyad" target="_blank" rel="noopener">Dyad <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Créer des applications en local avec des fournisseurs de modèles configurables</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix. Application desktop locale, coûts du fournisseur de modèle</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="prototypage" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Web</span></div>
+        <h3><a href="https://lovable.dev/" target="_blank" rel="noopener">Lovable <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Génération d&#x27;applications full-stack avec Supabase</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="prototypage" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Web</span></div>
+        <h3><a href="https://www.onlook.com/" target="_blank" rel="noopener">Onlook <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Modifier visuellement les interfaces d&#x27;une application tout en travaillant sur le code</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="prototypage" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Web</span></div>
+        <h3><a href="https://replit.com/" target="_blank" rel="noopener">Replit <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Créer et itérer sur des applications avec Replit Agent</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="prototypage" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Web</span></div>
+        <h3><a href="https://v0.app/" target="_blank" rel="noopener">v0 <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">L&#x27;IA de Vercel pour générer des UI et du React</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="contexte" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Ressource</span></div>
+        <h3><a href="https://github.com/caliber-ai-org/ai-setup" target="_blank" rel="noopener">Caliber <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">CLI qui génère et synchronise les configurations d&#x27;agents IA pour Claude Code, Cursor et Codex</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="contexte" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">MCP</span></div>
+        <h3><a href="https://github.com/upstash/context7" target="_blank" rel="noopener">Context7 <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Récupérer la documentation des bibliothèques comme contexte de code</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="contexte" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">MCP</span></div>
+        <h3><a href="https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem" target="_blank" rel="noopener">Filesystem MCP <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Donner aux agents un accès contrôlé aux fichiers du projet</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix. Implémentation de référence, sans garantie de production</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="contexte" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">MCP</span></div>
+        <h3><a href="https://github.com/github/github-mcp-server" target="_blank" rel="noopener">GitHub MCP <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Connecter les workflows de dépôts, d&#x27;issues et de pull requests</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="contexte" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">MCP</span></div>
+        <h3><a href="https://github.com/neondatabase/mcp-server-neon" target="_blank" rel="noopener">Neon <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Connecter les workflows de développement aux bases de données Neon</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="contexte" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">MCP</span></div>
+        <h3><a href="https://developers.notion.com/guides/mcp/overview" target="_blank" rel="noopener">Notion MCP <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">MCP officiel hébergé pour chercher, lire et mettre à jour du contenu Notion</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="contexte" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Ressource</span></div>
+        <h3><a href="https://github.com/Fission-AI/OpenSpec" target="_blank" rel="noopener">OpenSpec <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Cadre de développement piloté par les spécifications pour assistants de code IA</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="contexte" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">MCP</span></div>
+        <h3><a href="https://github.com/supabase/mcp" target="_blank" rel="noopener">Supabase MCP <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">MCP officiel pour les schémas, requêtes et configurations de projet Supabase</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="tests" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">MCP</span></div>
+        <h3><a href="https://github.com/vostride/agent-qa" target="_blank" rel="noopener">Agent QA <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Écrire et exécuter des tests web et mobile en langage naturel</p>
+        <p class="acces"><b>Accès</b> FSL-1.1-ALv2. Source disponible avec restriction d&#x27;usage concurrent. Coûts de modèle</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="tests" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">MCP</span></div>
+        <h3><a href="https://github.com/microsoft/playwright-mcp" target="_blank" rel="noopener">Playwright MCP (Microsoft) <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Automatisation officielle du navigateur par instantanés structurés des pages</p>
+        <p class="acces"><b>Accès</b> Client Apache-2.0. Conditions du modèle séparées</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="tests" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Ressource</span></div>
+        <h3><a href="https://github.com/The-PR-Agent/pr-agent" target="_blank" rel="noopener">PR-Agent <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Relecteur de pull requests maintenu par la communauté, distinct de Qodo</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="tests" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Web</span></div>
+        <h3><a href="https://getprbl.com" target="_blank" rel="noopener">Prbl <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Scanner une application en ligne ou un dépôt pour trouver les failles fréquentes du code généré par IA. La GitHub Action commente les PR. Le correcteur Pro applique des corrections vérifiées</p>
+        <p class="acces"><b>Accès</b> Scan et GitHub Action gratuits. Offres payantes pour le correcteur et les dépôts privés. Python/JS/TS uniquement</p>
+        <p class="meta">Vérifié le 23 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="tests" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Ressource</span></div>
+        <h3><a href="https://www.qodo.ai" target="_blank" rel="noopener">Qodo <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Moteur de revue de code par IA (anciennement CodiumAI)</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="tests" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">MCP</span></div>
+        <h3><a href="https://github.com/semgrep/semgrep/tree/develop/cli/src/semgrep/mcp" target="_blank" rel="noopener">Semgrep MCP <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Analyse de sécurité MCP via le CLI Semgrep maintenu</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="tests" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">MCP</span></div>
+        <h3><a href="https://github.com/getsentry/sentry-mcp" target="_blank" rel="noopener">Sentry <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Inspecter les erreurs d&#x27;application et diagnostiquer les échecs</p>
+        <p class="acces"><b>Accès</b> Functional Source License. Source disponible. Vérifier les conditions de l&#x27;offre hébergée</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="deploiement" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">MCP</span></div>
+        <h3><a href="https://github.com/cloudflare/mcp-server-cloudflare" target="_blank" rel="noopener">Cloudflare <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Gérer le déploiement d&#x27;applications et les ressources cloud</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="deploiement" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Ressource</span></div>
+        <h3><a href="https://github.com/e2b-dev/E2B" target="_blank" rel="noopener">E2B <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Sandbox cloud sécurisée pour agents IA de niveau entreprise</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="deploiement" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Web</span></div>
+        <h3><a href="https://publish.my/" target="_blank" rel="noopener">Publish.my <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Publication de sites statiques pilotée par agents, avec activation par email</p>
+        <p class="acces"><b>Accès</b> Offre gratuite. Sites statiques uniquement. Activation par email</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="deploiement" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">MCP</span></div>
+        <h3><a href="https://github.com/getsentry/XcodeBuildMCP" target="_blank" rel="noopener">XcodeBuildMCP <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Outils CLI et MCP pour compiler, exécuter et déboguer des projets Apple</p>
+        <p class="acces"><b>Accès</b> Vérifier le prix</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="espaces" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Desktop</span></div>
+        <h3><a href="https://delta.dev/" target="_blank" rel="noopener">Delta (Zed) <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Lancer des fils d&#x27;agents et relire leurs changements dans un espace de travail multijoueur qui relie conversation et historique du code. Compatible avec les dépôts Git existants</p>
+        <p class="acces"><b>Accès</b> Gratuit pendant la bêta publique. Offres payantes prévues. Coûts de modèle séparés</p>
+        <p class="meta">Vérifié le 20 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="espaces" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Desktop</span></div>
+        <h3><a href="https://github.com/MusicMaster4/Duckweed" target="_blank" rel="noopener">Duckweed <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Exécuter agents de code, shells, diffs Git et sessions dans un espace de travail local multiplateforme</p>
+        <p class="acces"><b>Accès</b> Source disponible. Voir la licence. Coûts de modèle et de fournisseur séparés</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="espaces" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Ressource</span></div>
+        <h3><a href="https://github.com/lanesket/llm.log" target="_blank" rel="noopener">llm.log <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Inspecter les coûts, tokens et traces de requêtes des modèles via un proxy local</p>
+        <p class="acces"><b>Accès</b> MIT. Coûts de modèle et de fournisseur séparés</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="espaces" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Desktop</span></div>
+        <h3><a href="https://github.com/johannesjo/parallel-code" target="_blank" rel="noopener">Parallel Code <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Exécuter des agents de code dans des worktrees Git isolés et relire leurs changements</p>
+        <p class="acces"><b>Accès</b> MIT. Coûts de modèle et de fournisseur séparés</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="espaces" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">CLI</span></div>
+        <h3><a href="https://github.com/shep-ai/shep" target="_blank" rel="noopener">Shep <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Orchestrer des agents de code en parallèle dans des worktrees Git isolés, jusqu&#x27;au commit, au push, au suivi CI et aux brouillons de PR</p>
+        <p class="acces"><b>Accès</b> Client MIT. Abonnement d&#x27;agent ou coûts d&#x27;API séparés</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="espaces" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Desktop</span></div>
+        <h3><a href="https://github.com/pungme/superagent-desktop" target="_blank" rel="noopener">Superagent <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Utiliser Claude Code ou Codex dans un espace de travail macOS avec outils navigateur et iOS</p>
+        <p class="acces"><b>Accès</b> MIT. macOS Apple Silicon. Abonnement au modèle séparé</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="espaces" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Desktop</span></div>
+        <h3><a href="https://github.com/aqua5230/usage" target="_blank" rel="noopener">usage <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Voir les quotas des agents de code depuis la barre de menu macOS ou la zone de notification Windows</p>
+        <p class="acces"><b>Accès</b> AGPL-3.0. Coûts de modèle et de fournisseur séparés</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="espaces" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Ressource</span></div>
+        <h3><a href="https://www.warp.dev/terminal" target="_blank" rel="noopener">Warp Terminal <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Utiliser un terminal orienté agents et inspecter les workflows de code</p>
+        <p class="acces"><b>Accès</b> Téléchargement du terminal. Vérifier le prix de l&#x27;usage IA</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="apprendre" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Guide</span></div>
+        <h3><a href="https://aibook.ren/categories/ai-coding" target="_blank" rel="noopener">AI Book: AI Coding <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Manuel en chinois sur les workflows d&#x27;agents de code, le choix des outils et les pratiques avec Cursor, Codex, Claude Code et Kiro</p>
+        <p class="acces"><b>Accès</b> Lecture gratuite. Vérifier les conditions de réutilisation</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="apprendre" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Guide</span></div>
+        <h3><a href="https://roboco.io/posts/vibe-coding-manual/" target="_blank" rel="noopener">Vibe Coding Manual (Roboco) <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Workflow en coréen et modèles de règles de projet. Exemples datés</p>
+        <p class="acces"><b>Accès</b> Lecture gratuite. Vérifier les conditions de réutilisation</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="apprendre" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Guide</span></div>
+        <h3><a href="https://zalt.me/guides/vibe-coding" target="_blank" rel="noopener">Vibe Coding with Confidence (Mahmoud Zalt) <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Manuel de développement avec chapitres d&#x27;introduction accessibles et contenu avancé payant</p>
+        <p class="acces"><b>Accès</b> Chapitres de base gratuits. Chapitres avancés payants. EN</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="apprendre" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Guide</span></div>
+        <h3><a href="https://lucumr.pocoo.org/2025/6/12/agentic-coding/" target="_blank" rel="noopener">Agentic Coding Recommendations (Armin Ronacher) <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Workflows d&#x27;agents pratiques et conseils de tests. Point de vue d&#x27;un praticien, 2025</p>
+        <p class="acces"><b>Accès</b> Lecture gratuite. Vérifier les conditions de réutilisation</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="apprendre" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Guide</span></div>
+        <h3><a href="https://simonwillison.net/2025/Mar/11/using-llms-for-code/" target="_blank" rel="noopener">Here&#x27;s how I use LLMs to help me write code (Simon Willison) <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Pratiques itératives de code et de QA. Les exemples d&#x27;outils de 2025 sont historiques</p>
+        <p class="acces"><b>Accès</b> Lecture gratuite. Vérifier les conditions de réutilisation</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="apprendre" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Guide</span></div>
+        <h3><a href="https://cloudsecurityalliance.org/blog/2025/04/09/secure-vibe-coding-guide" target="_blank" rel="noopener">Secure Vibe Coding Guide (CSA) <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Checklist de sécurité sur les secrets, les autorisations, la validation et la revue</p>
+        <p class="acces"><b>Accès</b> Lecture gratuite. Vérifier les conditions de réutilisation</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="apprendre" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Guide</span></div>
+        <h3><a href="https://github.com/coleam00/context-engineering-intro" target="_blank" rel="noopener">Context Engineering Intro (coleam00) <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Exemples de contexte de projet et d&#x27;instructions pour agents de code</p>
+        <p class="acces"><b>Accès</b> Lecture gratuite. Vérifier les conditions de réutilisation</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="apprendre" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Guide</span></div>
+        <h3><a href="https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro" target="_blank" rel="noopener">Documentation du Model Context Protocol <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Introduction officielle actuelle à l&#x27;architecture et aux intégrations MCP</p>
+        <p class="acces"><b>Accès</b> Lecture gratuite. Vérifier les conditions de réutilisation</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="apprendre" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Paper</span></div>
+        <h3><a href="https://arxiv.org/abs/2405.15793" target="_blank" rel="noopener">SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Agent autonome qui corrige de vrais bugs avec une Agent-Computer Interface</p>
+        <p class="acces"><b>Accès</b> Lecture gratuite. Vérifier les conditions de réutilisation</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="apprendre" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Paper</span></div>
+        <h3><a href="https://arxiv.org/abs/2310.06770" target="_blank" rel="noopener">SWE-bench: Can Language Models Resolve Real-World GitHub Issues? <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Benchmark de référence pour évaluer les agents de code IA</p>
+        <p class="acces"><b>Accès</b> Lecture gratuite. Vérifier les conditions de réutilisation</p>
+        <p class="meta">Vérifié le 18 sept. 2026</p>
+      </li>
+      <li class="outil" data-cat="apprendre" data-source="b">
+        <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">Guide</span></div>
+        <h3><a href="https://vdlc.roboco.io/" target="_blank" rel="noopener">VDLC — Vibe-Driven Development Lifecycle (Roboco) <span aria-hidden="true">↗</span></a></h3>
+        <p class="desc">Cadre de cycle de vie qui traite l&#x27;intention et le contexte comme artefacts principaux. Six étapes avec validation humaine à l&#x27;approbation du plan, à la revue finale et au déploiement. Trilingue EN/KO/JA</p>
+        <p class="acces"><b>Accès</b> Lecture gratuite. Vérifier les conditions de réutilisation</p>
+        <p class="meta">Vérifié le 4 oct. 2026</p>
+      </li>
+      </ul>
+      <p class="vide">Aucun outil pour cette combinaison : le post X ne parle que de design et d'interface, la liste vérifiée de code, de tests et de déploiement.</p>
+    </section>
+
+    <!-- La comparaison des deux sources -->
+    <section class="comparaison" id="comparaison" aria-labelledby="titre-comparaison">
+      <h2 id="titre-comparaison">Les deux sources, côte à côte</h2>
+
+      <table class="tableau-sources">
+        <thead>
+          <tr><th scope="col">La question</th><th scope="col">Post X</th><th scope="col">Liste vérifiée</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Qui écrit, et dans quel but ?</th>
+            <td data-label="Post X">Himanshu Hingorani, fondateur de Scrolltide, sur son compte X. Un post d'audience : « 25 ressources pour garder une longueur d'avance ».</td>
+            <td data-label="Liste vérifiée">Le projet open source roboco-io, mis à jour chaque semaine avec l'agent Pi. Le cours en publie une copie française. But affiché : un point de départ concis et vérifié.</td>
+          </tr>
+          <tr>
+            <th scope="row">Les informations sont-elles datées et sourcées ?</th>
+            <td data-label="Post X">Le post est daté du 9 octobre 2026. Les ressources, non : ni date, ni source, ni critère de sélection.</td>
+            <td data-label="Liste vérifiée">Oui. Chaque outil a une date de vérification et une fiche de preuves, et la politique de sélection est publique.</td>
+          </tr>
+          <tr>
+            <th scope="row">Le prix et l'accès sont-ils indiqués ?</th>
+            <td data-label="Post X">Jamais.</td>
+            <td data-label="Liste vérifiée">Oui, outil par outil, avec la mention « Vérifier le prix » quand le tarif n'a pas été revu.</td>
+          </tr>
+          <tr>
+            <th scope="row">Y a-t-il des liens d'intérêt ?</th>
+            <td data-label="Post X">Oui. La n°&nbsp;1, Scrolltide, est la société de l'auteur, et il répond sous son propre post : « si vous n'en ouvrez qu'une, prenez la n°&nbsp;1 ».</td>
+            <td data-label="Liste vérifiée">Les contributeurs doivent déclarer leurs affiliations. Un point à noter : Pi, l'agent qui entretient la liste, y figure aussi.</td>
+          </tr>
+          <tr>
+            <th scope="row">Quels types d'outils ?</th>
+            <td data-label="Post X">Du design et de l'interface : inspiration, composants, animation.</td>
+            <td data-label="Liste vérifiée">De quoi coder, tester, déployer et organiser son travail, plus des guides pour apprendre.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="conclusion"><b>Les deux listes se complètent.</b> Le post X sert à trouver l'inspiration et les briques visuelles, la liste vérifiée à choisir les outils pour construire, tester et publier. Mais seule la seconde dit ce qu'un outil coûte et à quelle date c'était vrai.</p>
+
+      <div class="colonnes">
+        <div class="bloc-note">
+          <h3>Ce que j'ai vérifié</h3>
+          <ul>
+            <li>Les 25 ressources du post, relevées sur la capture et comparées au corrigé du cours : aucune oubliée, aucune adresse déformée.</li>
+            <li>Les 79 liens, testés le 15 octobre 2026 : tous répondent. Godly redirige vers un autre site, recent.design. Shadertoy affiche une vérification anti-robot, son lien n'a pas pu être testé automatiquement.</li>
+            <li>La copie française du cours s'arrête au 4 octobre 2026. La liste originale, roboco-io/awesome-vibecoding, a ajouté quatre outils depuis, les 10 et 11 octobre.</li>
+          </ul>
+        </div>
+        <div class="bloc-note">
+          <h3>Les changements de politique relevés</h3>
+          <ul>
+            <li><b>Gemini CLI</b> : l'accès par abonnement grand public est retiré. Il passe par une clé API, Vertex ou une offre entreprise.</li>
+            <li><b>La liste elle-même</b> est passée de 156 à 40 outils le 18 septembre 2026, en écartant les produits arrêtés ou fermés aux nouveaux utilisateurs.</li>
+            <li><b>Delta (Zed)</b> est gratuit pendant sa bêta publique. Des offres payantes sont prévues.</li>
+            <li><b>Prbl</b> : le scan est gratuit, le correcteur et les dépôts privés sont payants.</li>
+            <li><b>Agent QA et Sentry</b> sont « source disponible » sous licence FSL, qui restreint l'usage concurrent. Ce n'est pas de l'open source au sens strict.</li>
+            <li><b>Cursor</b>, relevé en vérifiant ses conditions : il est désormais vendu par X Subscription Corp et couplé à Grok, et les modèles tiers ne sont plus inclus dans les forfaits.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Les trois outils vérifiés -->
+    <section class="verifies" id="verifies" aria-labelledby="titre-verifies">
+      <h2 id="titre-verifies">Trois outils vérifiés à la source</h2>
+      <p class="chapo-section">Lus sur leurs pages officielles le 15 octobre 2026. Deux de la liste vérifiée, un du post X.</p>
+
+      <div class="fiches">
+        <article class="fiche-outil">
+          <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">CLI</span></div>
+          <h3>Claude Code</h3>
+          <dl>
+            <dt>Prix et quotas</dt>
+            <dd>Absent de l'offre gratuite. Inclus dans Pro, 18&nbsp;€ par mois ou 15&nbsp;€ en annuel, et dans Max, à partir de 90&nbsp;€ par mois. Des limites sur 5 heures glissantes et par semaine, partagées avec le chat. Ou des crédits API à l'usage.</dd>
+            <dt>Compte, carte, clé API</dt>
+            <dd>Un compte Claude et une carte bancaire pour Pro et Max, ou une clé API par la Console.</dd>
+            <dt>Licence</dt>
+            <dd>Propriétaire, tous droits réservés à Anthropic.</dd>
+            <dt>Droits sur ce qu'il produit</dt>
+            <dd>Anthropic cède à l'utilisateur ses droits sur les résultats, à condition de respecter ses conditions.</dd>
+            <dt>Tes données et l'entraînement</dt>
+            <dd>Sur les offres individuelles, l'entraînement des modèles peut être désactivé dans les réglages.</dd>
+          </dl>
+          <p class="sources-fiche">Sources : <a href="https://claude.com/pricing" target="_blank" rel="noopener">tarifs</a> · <a href="https://www.anthropic.com/legal/consumer-terms" target="_blank" rel="noopener">conditions</a> · <a href="https://github.com/anthropics/claude-code/blob/main/LICENSE.md" target="_blank" rel="noopener">licence</a></p>
+        </article>
+
+        <article class="fiche-outil">
+          <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">IDE</span></div>
+          <h3>Cursor</h3>
+          <dl>
+            <dt>Prix et quotas</dt>
+            <dd>Gratuit avec des requêtes limitées. Plus à 8&nbsp;$ par mois, modèles Grok seulement. Premium à 30&nbsp;$, Super à 100&nbsp;$, Ultra à 200&nbsp;$. Les modèles tiers, comme Claude ou GPT, sont facturés en plus au tarif API. Un quota hebdomadaire partagé avec Grok, hors taxes.</dd>
+            <dt>Compte, carte, clé API</dt>
+            <dd>Un compte, et une carte pour les offres payantes, vendues uniquement par X Subscription Corp.</dd>
+            <dt>Licence</dt>
+            <dd>Propriétaire. Anysphere conserve tous les droits sur le service.</dd>
+            <dt>Droits sur ce qu'il produit</dt>
+            <dd>Tu gardes tes données, et Anysphere te cède ses droits éventuels sur les suggestions. Une même suggestion peut être donnée à d'autres utilisateurs.</dd>
+            <dt>Tes données et l'entraînement</dt>
+            <dd>Avec le mode confidentialité activé, ton code n'est utilisé pour l'entraînement ni par Cursor ni par ses fournisseurs de modèles. Sinon, les préférences se règlent dans l'application.</dd>
+          </dl>
+          <p class="sources-fiche">Sources : <a href="https://cursor.com/pricing" target="_blank" rel="noopener">tarifs</a> · <a href="https://cursor.com/terms-of-service" target="_blank" rel="noopener">conditions du 3 septembre 2026</a></p>
+        </article>
+
+        <article class="fiche-outil">
+          <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Web</span></div>
+          <h3>Mobbin</h3>
+          <dl>
+            <dt>Prix et quotas</dt>
+            <dd>Gratuit avec un accès limité aux apps et aux sites, trois collections et pas de crédits IA. Pro à 10&nbsp;€ par mois et Team à 16&nbsp;€ par membre et par mois, en annuel. Enterprise sur devis. Le branchement MCP aux agents est réservé à Pro et Team.</dd>
+            <dt>Compte, carte, clé API</dt>
+            <dd>Un compte, même gratuit, et une carte pour les offres payantes. Pas de remboursement en cas d'arrêt en cours de période.</dd>
+            <dt>Licence</dt>
+            <dd>Propriétaire. Mobbin accorde une licence d'utilisation non exclusive.</dd>
+            <dt>Droits sur ce qu'il produit</dt>
+            <dd>Les captures restent la propriété de Mobbin ou de leurs ayants droit, et les conditions attribuent à Mobbin les œuvres dérivées produites avec le service. Interdit d'utiliser le contenu pour entraîner une IA.</dd>
+            <dt>Tes données et l'entraînement</dt>
+            <dd>La politique de confidentialité prévoit d'utiliser l'usage et le contenu des utilisateurs pour entraîner ses propres modèles.</dd>
+          </dl>
+          <p class="sources-fiche">Sources : <a href="https://mobbin.com/pricing" target="_blank" rel="noopener">tarifs</a> · <a href="https://mobbin.com/terms" target="_blank" rel="noopener">conditions du 16 mai 2026</a> · <a href="https://mobbin.com/privacy" target="_blank" rel="noopener">confidentialité</a></p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pied-outils">
+    <p>Sources : la capture du post X de Himanshu Hingorani du 9 octobre 2026, fournie par le cours, et la liste <a href="https://github.com/Scap-Mehdi/awesome-vibecoding/blob/main/README.fr.md" target="_blank" rel="noopener">Awesome Vibe Coding</a> en français, placée dans le domaine public sous licence CC0 1.0. Lues et vérifiées le 15 octobre 2026.</p>
+    <p><a class="retour" href="index.html"><span aria-hidden="true">←</span> Retour à l'accueil</a></p>
+  </footer>
+
+  <svg class="vagues" viewBox="0 0 1440&#8239;120" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 50 C180 10&#8239;360 90&#8239;540 50 C720 10&#8239;900 90 1080 50 C1260 10 1350 60 1440 40 V120 H0 Z" fill="#A7DDD3" />
+    <path d="M0 80 C200 45&#8239;380&#8239;115&#8239;600 78 C820 42&#8239;980&#8239;112 1200 76 C1320 58 1390 70 1440 66 V120 H0 Z" fill="#74C9BC" />
+  </svg>
+
+</body>
+</html>
