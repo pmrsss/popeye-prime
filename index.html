@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Premier projet · Popeye Prime</title>
+  <meta name="description" content="Ma première page web statique, publiée avec GitHub Pages.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="carte">
+
+    <!-- La prairie et le teckel -->
+    <svg class="prairie" viewBox="0 0 600 280" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Un petit teckel fauve qui remue la queue près d'un pêcher, sous un ballon qui porte un cadeau">
+      <defs>
+        <linearGradient id="ciel" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#BFE6FF" />
+          <stop offset="1" stop-color="#FDE7F3" />
+        </linearGradient>
+      </defs>
+      <rect width="600" height="280" fill="url(#ciel)" />
+
+      <!-- Les nuages -->
+      <g class="nuage">
+        <rect x="200" y="42" width="80" height="24" rx="12" />
+        <circle cx="226" cy="42" r="18" /><circle cx="252" cy="36" r="22" />
+      </g>
+      <g class="nuage petit">
+        <rect x="456" y="34" width="64" height="20" rx="10" />
+        <circle cx="478" cy="34" r="14" /><circle cx="500" cy="30" r="17" />
+      </g>
+
+      <!-- Le ballon et son cadeau, qui traversent le ciel comme dans Animal Crossing -->
+      <g class="ballon">
+        <g class="ballon-flotte">
+          <g transform="scale(1.3)">
+            <path d="M0 21 Q3 28 0 34" fill="none" stroke="#8A7F95" stroke-width="1.2" />
+            <ellipse cx="0" cy="0" rx="15" ry="18" fill="#8F7CF0" />
+            <ellipse cx="-5" cy="-7" rx="4" ry="6.5" fill="#FFFFFF" opacity="0.45" />
+            <path d="M-2.5 17 L2.5 17 L0 21 Z" fill="#7A66DE" />
+            <rect x="-10" y="37" width="20" height="16" rx="2" fill="#FFF6E6" />
+            <rect x="3" y="37" width="7" height="16" rx="1.5" fill="#EADCC4" />
+            <rect x="-11.5" y="33.5" width="23" height="5" rx="1.5" fill="#FFFDF5" />
+            <rect x="-2" y="33.5" width="4" height="19.5" fill="#F0503C" />
+            <ellipse cx="-4.5" cy="32.5" rx="4.5" ry="2.6" fill="#F0503C" transform="rotate(-20 -4.5 32.5)" />
+            <ellipse cx="4.5" cy="32.5" rx="4.5" ry="2.6" fill="#F0503C" transform="rotate(20 4.5 32.5)" />
+          </g>
+        </g>
+      </g>
+
+      <!-- Les collines -->
+      <path d="M0 175 Q150 135 300 170 T600 160 V280 H0 Z" fill="#B5E3A1" />
+      <path d="M0 210 Q180 180 390 205 T600 198 V280 H0 Z" fill="#8FD18B" />
+
+      <!-- Le pêcher rond, avec ses fruits -->
+      <ellipse cx="96" cy="236" rx="40" ry="6" fill="rgba(60, 90, 50, 0.15)" />
+      <path d="M88 236 L90 168 Q96 160 102 168 L104 236 Z" fill="#B07A4F" />
+      <path d="M96 196 L80 180 M97 186 L110 174" stroke="#B07A4F" stroke-width="5" stroke-linecap="round" />
+      <circle cx="96" cy="128" r="50" fill="#5DB063" />
+      <circle cx="90" cy="120" r="44" fill="#6DBE6A" />
+      <ellipse cx="76" cy="98" rx="20" ry="12" fill="#86D07E" />
+      <ellipse cx="110" cy="92" rx="10" ry="6" fill="#86D07E" />
+      <g class="fruits">
+        <circle cx="70" cy="132" r="8" fill="#FF9EB5" /><circle cx="67" cy="129" r="2.4" fill="#FFFFFF" opacity="0.7" />
+        <circle cx="112" cy="122" r="8" fill="#FF9EB5" /><circle cx="109" cy="119" r="2.4" fill="#FFFFFF" opacity="0.7" />
+        <circle cx="94" cy="150" r="8" fill="#FF9EB5" /><circle cx="91" cy="147" r="2.4" fill="#FFFFFF" opacity="0.7" />
+      </g>
+
+      <!-- Les buissons ronds, à droite -->
+      <g>
+        <circle cx="492" cy="222" r="22" fill="#5DB063" />
+        <circle cx="520" cy="214" r="28" fill="#6DBE6A" />
+        <circle cx="550" cy="224" r="20" fill="#5DB063" />
+        <ellipse cx="512" cy="200" rx="10" ry="6" fill="#86D07E" />
+        <rect x="470" y="226" width="102" height="16" rx="8" fill="#5DB063" />
+      </g>
+
+      <!-- Les cailloux -->
+      <ellipse cx="190" cy="250" rx="9" ry="5" fill="#E7E1D6" />
+      <ellipse cx="203" cy="253" rx="5" ry="3.5" fill="#D9D1C3" />
+      <ellipse cx="438" cy="258" rx="7" ry="4" fill="#E7E1D6" />
+
+      <!-- Le teckel nain, poil ras fauve, en version chibi -->
+      <ellipse cx="318" cy="248" rx="86" ry="7" fill="rgba(60, 90, 50, 0.18)" />
+      <g transform="translate(222 85)">
+        <g class="teckel">
+          <!-- La forme qui sert à découper l'ombre du ventre, pour qu'elle ne déborde jamais du corps -->
+          <clipPath id="decoupe-ventre">
+            <rect x="62" y="98" width="120" height="58" rx="29" />
+          </clipPath>
+
+          <!-- La queue, qui remue -->
+          <path class="queue" d="M166 112 Q182 96 184 70" fill="none" stroke="#CF7F44" stroke-width="11" stroke-linecap="round" />
+          <!-- La patte arrière du fond, seule au second plan, plus sombre -->
+          <rect x="146" y="136" width="17" height="25" rx="8.5" fill="#B8682F" />
+          <!-- Le corps, long et rond : la lumière sur le dos -->
+          <rect x="62" y="98" width="120" height="58" rx="29" fill="#D98A4E" />
+          <ellipse cx="128" cy="106" rx="36" ry="6" fill="#E49C60" />
+          <!-- L'ombre du ventre : elle suit la courbe du dessous et s'estompe vers les flancs -->
+          <ellipse cx="124" cy="166" rx="74" ry="22" fill="#B8682F" opacity="0.4" clip-path="url(#decoupe-ventre)" />
+          <!-- La patte arrière face à nous -->
+          <rect x="162" y="136" width="18" height="27" rx="9" fill="#D98A4E" />
+          <!-- Les deux pattes avant, au premier plan. Celle de devant est un peu plus claire,
+               parce qu'elle est plus près de la lumière -->
+          <rect x="64" y="130" width="18" height="33" rx="9" fill="#D98A4E" />
+          <rect x="84" y="128" width="19" height="35" rx="9.5" fill="#DF9356" />
+          <!-- La fine ombre entre les deux pattes avant -->
+          <path d="M83 142 V160" stroke="#B8682F" stroke-width="2" stroke-linecap="round" opacity="0.55" />
+          <!-- Les griffes -->
+          <path d="M70 158 v4 M76 158 v4 M90.5 158 v4 M96.5 158 v4 M168 158 v4 M174 158 v4" stroke="#A85A2A" stroke-width="1.8" stroke-linecap="round" />
+          <!-- Le cou, fin, presque caché par la tête -->
+          <ellipse cx="74" cy="108" rx="19" ry="11" fill="#D98A4E" />
+          <!-- Le collier : un arc qui passe sous le menton et disparaît derrière la mâchoire -->
+          <path d="M56 106 Q74 122 92 106" fill="none" stroke="#FF7EB6" stroke-width="9" stroke-linecap="round" />
+          <path d="M60 105 Q74 117 88 105" fill="none" stroke="#FFB3D6" stroke-width="2" stroke-linecap="round" />
+          <!-- La tête, grosse et ronde -->
+          <ellipse cx="74" cy="66" rx="50" ry="45" fill="#D98A4E" />
+          <!-- Le reflet sur le dessus du crâne -->
+          <ellipse cx="62" cy="34" rx="18" ry="6" fill="#E49C60" />
+          <!-- Les oreilles qui tombent, d'un roux plus profond -->
+          <path class="oreille gauche" d="M34 40 C14 44 8 78 16 100 C22 112 38 108 38 94 C40 76 42 56 34 40 Z" fill="#A85A2A" />
+          <path class="oreille droite" d="M114 40 C134 44 140 78 132 100 C126 112 110 108 110 94 C108 76 106 56 114 40 Z" fill="#A85A2A" />
+          <!-- Le museau, du même roux, juste un peu plus lumineux parce qu'il avance -->
+          <ellipse cx="74" cy="86" rx="22" ry="15" fill="#E39758" />
+          <!-- Les yeux, qui clignent -->
+          <g class="yeux">
+            <ellipse cx="57" cy="64" rx="5.5" ry="7.5" fill="#2E2430" />
+            <ellipse cx="91" cy="64" rx="5.5" ry="7.5" fill="#2E2430" />
+            <circle cx="59" cy="60.5" r="2.2" fill="#FFFFFF" />
+            <circle cx="93" cy="60.5" r="2.2" fill="#FFFFFF" />
+          </g>
+          <!-- Les joues -->
+          <ellipse cx="42" cy="80" rx="8" ry="4.5" fill="#FF8FB8" opacity="0.55" />
+          <ellipse cx="106" cy="80" rx="8" ry="4.5" fill="#FF8FB8" opacity="0.55" />
+          <!-- La truffe et la bouche -->
+          <ellipse cx="74" cy="79" rx="8.5" ry="6" fill="#3B2A22" />
+          <ellipse cx="71.5" cy="77" rx="2.6" ry="1.6" fill="#FFFFFF" opacity="0.6" />
+          <path d="M66 89 Q70 93 74 89 Q78 93 82 89" fill="none" stroke="#3B2A22" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+          <!-- La médaille en cœur, accrochée au milieu du collier -->
+          <circle cx="74" cy="118" r="2" fill="none" stroke="#E9B53A" stroke-width="1.5" />
+          <path d="M74 122 c-3.5 -4.5 -10 -1 -7 3.5 l7 7 l7 -7 c3 -4.5 -3.5 -8 -7 -3.5 Z" fill="#FFD45E" stroke="#E9B53A" stroke-width="1" />
+        </g>
+      </g>
+
+    </svg>
+
+    <!-- Le bonjour -->
+    <section class="contenu">
+      <h1>Hello everyone&nbsp;!</h1>
+      <p class="texte">Ma première page web statique est en ligne. Simple, mignonne et prête à évoluer.</p>
+      <div class="boutons">
+        <a class="bouton principal" href="outils.html">Découvrir les outils</a>
+        <a class="bouton" href="https://github.com/pmrsss/popeye-prime">Voir le dépôt GitHub</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Les vagues, en bas de page -->
+  <svg class="vagues" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 50 C180 10 360 90 540 50 C720 10 900 90 1080 50 C1260 10 1350 60 1440 40 V120 H0 Z" fill="#A7DDD3" />
+    <path d="M0 80 C200 45 380 115 600 78 C820 42 980 112 1200 76 C1320 58 1390 70 1440 66 V120 H0 Z" fill="#74C9BC" />
+  </svg>
+
+</body>
+</html>
