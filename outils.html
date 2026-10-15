@@ -39,39 +39,55 @@
       <ul class="chiffres">
         <li><b>25</b> du post X</li>
         <li><b>54</b> de la liste vérifiée</li>
-        <li><b>3</b> vérifiés à la source</li>
-      </ul>
+          </ul>
     </section>
 
     <!-- Le catalogue, filtrable sans JavaScript -->
     <section class="catalogue" id="catalogue" aria-labelledby="titre-catalogue">
-      <h2 id="titre-catalogue">Le catalogue</h2>
+      <div class="catalogue-tete">
+        <h2 id="titre-catalogue">Le catalogue</h2>
+        <fieldset class="choix-source">
+          <legend>Source</legend>
+          <div class="segments">
+            <input type="radio" name="source" id="src-tout" checked><label for="src-tout">Les deux</label>
+            <input type="radio" name="source" id="src-a"><label for="src-a">Post X</label>
+            <input type="radio" name="source" id="src-b"><label for="src-b">Liste vérifiée</label>
+          </div>
+        </fieldset>
+      </div>
 
-      <fieldset class="filtres">
-        <legend>Source</legend>
-        <input type="radio" name="source" id="src-tout" checked><label for="src-tout">Les deux</label>
-        <input type="radio" name="source" id="src-a"><label for="src-a">Post X</label>
-        <input type="radio" name="source" id="src-b"><label for="src-b">Liste vérifiée</label>
-      </fieldset>
+      <div class="catalogue-corps">
+        <aside class="panneau-filtres" aria-label="Filtres">
+          <fieldset class="choix-categorie">
+            <legend>Catégorie</legend>
+            <input type="radio" name="categorie" id="cat-tout" checked><label for="cat-tout" class="ligne-tout">Tout <span>79</span></label>
+            <div class="groupe groupe-a">
+              <p class="groupe-titre">Design et interface</p>
+              <div class="groupe-lignes">
+                <input type="radio" name="categorie" id="cat-inspiration"><label for="cat-inspiration">Inspiration <span>4</span></label>
+                <input type="radio" name="categorie" id="cat-design-system"><label for="cat-design-system">Design systems <span>3</span></label>
+                <input type="radio" name="categorie" id="cat-composants"><label for="cat-composants">Composants d'interface <span>8</span></label>
+                <input type="radio" name="categorie" id="cat-animation"><label for="cat-animation">Animation et effets <span>8</span></label>
+                <input type="radio" name="categorie" id="cat-prompts"><label for="cat-prompts">Prompts <span>2</span></label>
+              </div>
+            </div>
+            <div class="groupe groupe-b">
+              <p class="groupe-titre">Construire et publier</p>
+              <div class="groupe-lignes">
+                <input type="radio" name="categorie" id="cat-code"><label for="cat-code">Code et édition <span>10</span></label>
+                <input type="radio" name="categorie" id="cat-prototypage"><label for="cat-prototypage">Prototypage d'apps <span>6</span></label>
+                <input type="radio" name="categorie" id="cat-contexte"><label for="cat-contexte">Contexte et intégrations <span>8</span></label>
+                <input type="radio" name="categorie" id="cat-tests"><label for="cat-tests">Tests et sécurité <span>7</span></label>
+                <input type="radio" name="categorie" id="cat-deploiement"><label for="cat-deploiement">Déploiement <span>4</span></label>
+                <input type="radio" name="categorie" id="cat-espaces"><label for="cat-espaces">Espaces de travail <span>8</span></label>
+                <input type="radio" name="categorie" id="cat-apprendre"><label for="cat-apprendre">Apprendre <span>11</span></label>
+              </div>
+            </div>
+          </fieldset>
+        </aside>
 
-      <fieldset class="filtres">
-        <legend>Catégorie</legend>
-        <input type="radio" name="categorie" id="cat-tout" checked><label for="cat-tout">Tout <span>79</span></label>
-        <input type="radio" name="categorie" id="cat-inspiration"><label for="cat-inspiration">Inspiration <span>4</span></label>
-        <input type="radio" name="categorie" id="cat-design-system"><label for="cat-design-system">Design systems <span>3</span></label>
-        <input type="radio" name="categorie" id="cat-composants"><label for="cat-composants">Composants d'interface <span>8</span></label>
-        <input type="radio" name="categorie" id="cat-animation"><label for="cat-animation">Animation et effets <span>8</span></label>
-        <input type="radio" name="categorie" id="cat-prompts"><label for="cat-prompts">Prompts <span>2</span></label>
-        <input type="radio" name="categorie" id="cat-code"><label for="cat-code">Code et édition <span>10</span></label>
-        <input type="radio" name="categorie" id="cat-prototypage"><label for="cat-prototypage">Prototypage d'apps <span>6</span></label>
-        <input type="radio" name="categorie" id="cat-contexte"><label for="cat-contexte">Contexte et intégrations <span>8</span></label>
-        <input type="radio" name="categorie" id="cat-tests"><label for="cat-tests">Tests et sécurité <span>7</span></label>
-        <input type="radio" name="categorie" id="cat-deploiement"><label for="cat-deploiement">Déploiement <span>4</span></label>
-        <input type="radio" name="categorie" id="cat-espaces"><label for="cat-espaces">Espaces de travail <span>8</span></label>
-        <input type="radio" name="categorie" id="cat-apprendre"><label for="cat-apprendre">Apprendre <span>11</span></label>
-      </fieldset>
-
-      <ul class="outils">
+        <div class="resultats">
+          <ul class="outils">
       <li class="outil" data-cat="inspiration" data-source="a">
         <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Site</span></div>
         <h3><a href="https://minimal.gallery" target="_blank" rel="noopener">Minimal Gallery <span aria-hidden="true">↗</span></a></h3>
@@ -603,131 +619,9 @@
         <p class="acces"><b>Accès</b> Lecture gratuite. Vérifier les conditions de réutilisation</p>
         <p class="meta">Vérifié le 4 oct. 2026</p>
       </li>
-      </ul>
-      <p class="vide">Aucun outil pour cette combinaison : le post X ne parle que de design et d'interface, la liste vérifiée de code, de tests et de déploiement.</p>
-    </section>
-
-    <!-- La comparaison des deux sources -->
-    <section class="comparaison" id="comparaison" aria-labelledby="titre-comparaison">
-      <h2 id="titre-comparaison">Les deux sources, côte à côte</h2>
-
-      <table class="tableau-sources">
-        <thead>
-          <tr><th scope="col">La question</th><th scope="col">Post X</th><th scope="col">Liste vérifiée</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Qui écrit, et dans quel but ?</th>
-            <td data-label="Post X">Himanshu Hingorani, fondateur de Scrolltide, sur son compte X. Un post d'audience : « 25 ressources pour garder une longueur d'avance ».</td>
-            <td data-label="Liste vérifiée">Le projet open source roboco-io, mis à jour chaque semaine avec l'agent Pi. Le cours en publie une copie française. But affiché : un point de départ concis et vérifié.</td>
-          </tr>
-          <tr>
-            <th scope="row">Les informations sont-elles datées et sourcées ?</th>
-            <td data-label="Post X">Le post est daté du 9 octobre 2026. Les ressources, non : ni date, ni source, ni critère de sélection.</td>
-            <td data-label="Liste vérifiée">Oui. Chaque outil a une date de vérification et une fiche de preuves, et la politique de sélection est publique.</td>
-          </tr>
-          <tr>
-            <th scope="row">Le prix et l'accès sont-ils indiqués ?</th>
-            <td data-label="Post X">Jamais.</td>
-            <td data-label="Liste vérifiée">Oui, outil par outil, avec la mention « Vérifier le prix » quand le tarif n'a pas été revu.</td>
-          </tr>
-          <tr>
-            <th scope="row">Y a-t-il des liens d'intérêt ?</th>
-            <td data-label="Post X">Oui. La n°&nbsp;1, Scrolltide, est la société de l'auteur, et il répond sous son propre post : « si vous n'en ouvrez qu'une, prenez la n°&nbsp;1 ».</td>
-            <td data-label="Liste vérifiée">Les contributeurs doivent déclarer leurs affiliations. Un point à noter : Pi, l'agent qui entretient la liste, y figure aussi.</td>
-          </tr>
-          <tr>
-            <th scope="row">Quels types d'outils ?</th>
-            <td data-label="Post X">Du design et de l'interface : inspiration, composants, animation.</td>
-            <td data-label="Liste vérifiée">De quoi coder, tester, déployer et organiser son travail, plus des guides pour apprendre.</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <p class="conclusion"><b>Les deux listes se complètent.</b> Le post X sert à trouver l'inspiration et les briques visuelles, la liste vérifiée à choisir les outils pour construire, tester et publier. Mais seule la seconde dit ce qu'un outil coûte et à quelle date c'était vrai.</p>
-
-      <div class="colonnes">
-        <div class="bloc-note">
-          <h3>Ce que j'ai vérifié</h3>
-          <ul>
-            <li>Les 25 ressources du post, relevées sur la capture et comparées au corrigé du cours : aucune oubliée, aucune adresse déformée.</li>
-            <li>Les 79 liens, testés le 15 octobre 2026 : tous répondent. Godly redirige vers un autre site, recent.design. Shadertoy affiche une vérification anti-robot, son lien n'a pas pu être testé automatiquement.</li>
-            <li>La copie française du cours s'arrête au 4 octobre 2026. La liste originale, roboco-io/awesome-vibecoding, a ajouté quatre outils depuis, les 10 et 11 octobre.</li>
           </ul>
+          <p class="vide">Aucun outil pour cette combinaison : le post X ne parle que de design et d'interface, la liste vérifiée de code, de tests et de déploiement.</p>
         </div>
-        <div class="bloc-note">
-          <h3>Les changements de politique relevés</h3>
-          <ul>
-            <li><b>Gemini CLI</b> : l'accès par abonnement grand public est retiré. Il passe par une clé API, Vertex ou une offre entreprise.</li>
-            <li><b>La liste elle-même</b> est passée de 156 à 40 outils le 18 septembre 2026, en écartant les produits arrêtés ou fermés aux nouveaux utilisateurs.</li>
-            <li><b>Delta (Zed)</b> est gratuit pendant sa bêta publique. Des offres payantes sont prévues.</li>
-            <li><b>Prbl</b> : le scan est gratuit, le correcteur et les dépôts privés sont payants.</li>
-            <li><b>Agent QA et Sentry</b> sont « source disponible » sous licence FSL, qui restreint l'usage concurrent. Ce n'est pas de l'open source au sens strict.</li>
-            <li><b>Cursor</b>, relevé en vérifiant ses conditions : il est désormais vendu par X Subscription Corp et couplé à Grok, et les modèles tiers ne sont plus inclus dans les forfaits.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Les trois outils vérifiés -->
-    <section class="verifies" id="verifies" aria-labelledby="titre-verifies">
-      <h2 id="titre-verifies">Trois outils vérifiés à la source</h2>
-      <p class="chapo-section">Lus sur leurs pages officielles le 15 octobre 2026. Deux de la liste vérifiée, un du post X.</p>
-
-      <div class="fiches">
-        <article class="fiche-outil">
-          <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">CLI</span></div>
-          <h3>Claude Code</h3>
-          <dl>
-            <dt>Prix et quotas</dt>
-            <dd>Absent de l'offre gratuite. Inclus dans Pro, 18&nbsp;€ par mois ou 15&nbsp;€ en annuel, et dans Max, à partir de 90&nbsp;€ par mois. Des limites sur 5 heures glissantes et par semaine, partagées avec le chat. Ou des crédits API à l'usage.</dd>
-            <dt>Compte, carte, clé API</dt>
-            <dd>Un compte Claude et une carte bancaire pour Pro et Max, ou une clé API par la Console.</dd>
-            <dt>Licence</dt>
-            <dd>Propriétaire, tous droits réservés à Anthropic.</dd>
-            <dt>Droits sur ce qu'il produit</dt>
-            <dd>Anthropic cède à l'utilisateur ses droits sur les résultats, à condition de respecter ses conditions.</dd>
-            <dt>Tes données et l'entraînement</dt>
-            <dd>Sur les offres individuelles, l'entraînement des modèles peut être désactivé dans les réglages.</dd>
-          </dl>
-          <p class="sources-fiche">Sources : <a href="https://claude.com/pricing" target="_blank" rel="noopener">tarifs</a> · <a href="https://www.anthropic.com/legal/consumer-terms" target="_blank" rel="noopener">conditions</a> · <a href="https://github.com/anthropics/claude-code/blob/main/LICENSE.md" target="_blank" rel="noopener">licence</a></p>
-        </article>
-
-        <article class="fiche-outil">
-          <div class="outil-haut"><span class="pastille-source b">Liste vérifiée</span><span class="genre">IDE</span></div>
-          <h3>Cursor</h3>
-          <dl>
-            <dt>Prix et quotas</dt>
-            <dd>Gratuit avec des requêtes limitées. Plus à 8&nbsp;$ par mois, modèles Grok seulement. Premium à 30&nbsp;$, Super à 100&nbsp;$, Ultra à 200&nbsp;$. Les modèles tiers, comme Claude ou GPT, sont facturés en plus au tarif API. Un quota hebdomadaire partagé avec Grok, hors taxes.</dd>
-            <dt>Compte, carte, clé API</dt>
-            <dd>Un compte, et une carte pour les offres payantes, vendues uniquement par X Subscription Corp.</dd>
-            <dt>Licence</dt>
-            <dd>Propriétaire. Anysphere conserve tous les droits sur le service.</dd>
-            <dt>Droits sur ce qu'il produit</dt>
-            <dd>Tu gardes tes données, et Anysphere te cède ses droits éventuels sur les suggestions. Une même suggestion peut être donnée à d'autres utilisateurs.</dd>
-            <dt>Tes données et l'entraînement</dt>
-            <dd>Avec le mode confidentialité activé, ton code n'est utilisé pour l'entraînement ni par Cursor ni par ses fournisseurs de modèles. Sinon, les préférences se règlent dans l'application.</dd>
-          </dl>
-          <p class="sources-fiche">Sources : <a href="https://cursor.com/pricing" target="_blank" rel="noopener">tarifs</a> · <a href="https://cursor.com/terms-of-service" target="_blank" rel="noopener">conditions du 3 septembre 2026</a></p>
-        </article>
-
-        <article class="fiche-outil">
-          <div class="outil-haut"><span class="pastille-source a">Post X</span><span class="genre">Web</span></div>
-          <h3>Mobbin</h3>
-          <dl>
-            <dt>Prix et quotas</dt>
-            <dd>Gratuit avec un accès limité aux apps et aux sites, trois collections et pas de crédits IA. Pro à 10&nbsp;€ par mois et Team à 16&nbsp;€ par membre et par mois, en annuel. Enterprise sur devis. Le branchement MCP aux agents est réservé à Pro et Team.</dd>
-            <dt>Compte, carte, clé API</dt>
-            <dd>Un compte, même gratuit, et une carte pour les offres payantes. Pas de remboursement en cas d'arrêt en cours de période.</dd>
-            <dt>Licence</dt>
-            <dd>Propriétaire. Mobbin accorde une licence d'utilisation non exclusive.</dd>
-            <dt>Droits sur ce qu'il produit</dt>
-            <dd>Les captures restent la propriété de Mobbin ou de leurs ayants droit, et les conditions attribuent à Mobbin les œuvres dérivées produites avec le service. Interdit d'utiliser le contenu pour entraîner une IA.</dd>
-            <dt>Tes données et l'entraînement</dt>
-            <dd>La politique de confidentialité prévoit d'utiliser l'usage et le contenu des utilisateurs pour entraîner ses propres modèles.</dd>
-          </dl>
-          <p class="sources-fiche">Sources : <a href="https://mobbin.com/pricing" target="_blank" rel="noopener">tarifs</a> · <a href="https://mobbin.com/terms" target="_blank" rel="noopener">conditions du 16 mai 2026</a> · <a href="https://mobbin.com/privacy" target="_blank" rel="noopener">confidentialité</a></p>
-        </article>
       </div>
     </section>
 
@@ -742,6 +636,20 @@
     <path d="M0 50 C180 10&#8239;360 90&#8239;540 50 C720 10&#8239;900 90 1080 50 C1260 10 1350 60 1440 40 V120 H0 Z" fill="#A7DDD3" />
     <path d="M0 80 C200 45&#8239;380&#8239;115&#8239;600 78 C820 42&#8239;980&#8239;112 1200 76 C1320 58 1390 70 1440 66 V120 H0 Z" fill="#74C9BC" />
   </svg>
+
+  <script>
+    // Quand on change de filtre en bas de la liste, la page remonte au début des résultats,
+    // sinon les premières cartes resteraient cachées sous le bandeau fixe.
+    document.querySelectorAll('.boite input[type="radio"]').forEach(function (choix) {
+      choix.addEventListener('change', function () {
+        var catalogue = document.getElementById('catalogue');
+        if (catalogue.getBoundingClientRect().top < 0) {
+          var doux = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          catalogue.scrollIntoView({ behavior: doux ? 'smooth' : 'auto' });
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
